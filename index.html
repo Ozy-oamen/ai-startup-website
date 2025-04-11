@@ -1,0 +1,43 @@
+# project 1
+# Edit index.html to add responsive navigation bar
+echo '<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Startup</title>
+    <style>
+        nav {
+            background: #2c3e50;
+            padding: 1rem;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav li {
+            margin-right: 1rem;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>Welcome to our AI Startup!</main>
+    <footer><!-- Footer will go here --></footer>
+</body>
+</html>' > index.html
