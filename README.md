@@ -124,3 +124,83 @@ git push -u origin update-navigation
 
 
 
+
+
+
+
+## Jerry's Step-by-Step Workflow
+
+### 1. Switch Back to the Main Branch
+```bash
+## This command switches your current directory back to the main branch.
+git chechout main 
+``` 
+### 2. Initialize Workspace
+- Using bash CLI  to clone  the repository and cd into the project directory.
+```bash
+# This bash command will clone the repository.
+
+git clone https://github.com/wilfredoamen/ai-startup-website.git
+```
+![img1b](./Img-git/./img1b.png)
+
+- Since we have already switched to the origin main branch, update Jerry's copy of the project with the commands below.
+```bash
+# The commands below will ensure Jerry starts from the lastest version of the project.
+
+git pull origin update-navigation
+```
+![img1a](./Img-git/img1a.png)
+
+### 3. Create a new branch for Jerry's contribution
+
+```bash
+# This will create a now branch for jerry to make his changes, keeping them separate from the main project until they are ready to be merged.
+
+git chechout -b add-contact-info
+```
+![img2a](./Img-git/Img2a.png)
+
+### 4. Open VScode to update contact-informations
+
+- Jerry uses VScode to add the contact information to the index.html file.
+
+![img3a](./Img-git/img3a.png)
+
+### 5. Stage the changes made by Jerry
+
+- The command below will stage the changes made on on the index.html file and preparing the file for it to be commited. 
+
+```bash
+git add index.html
+```
+![img4a](./Img-git/img4a.png)
+
+### 6. Commit Jerry's changes
+
+- The command below will save jerry;s changes to the branch history,with a message describing the exact changes made on the index.html file. 
+
+```bash
+git commit -m "Added contact information"
+
+```
+
+![img5a](./Img-git/img5a.png)
+
+### 7. Push Jerry's branch to the github repo.
+
+- The command below uploads Jerry's branch to the github repository, for someone to review and merge  changes  made on the index.html file to the main.
+
+```bash
+git push origin add-contact-info
+
+```
+![img6a](./Img-git/img6a.png)
+
+
+### 8. Create Pull Request
+- Jerry goes to his GitHub repository; He  notices there is a prompt to compare and pull request.
+- Jerry Clicks on the prompt "Compare and pull request" to request for a new pull request.
+- Add PR title: "Add contact info"
+- Add description explaining changes
+- Click "Create Pull Request" and Request review from a teammate.
