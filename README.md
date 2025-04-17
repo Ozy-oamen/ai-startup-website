@@ -10,8 +10,14 @@ A team is developing a website for an AI startup using Git for version control. 
 - Access to central repository (GitHub)
 - Clone of the project repository
 
-## Tom's Step-by-Step Workflow
 
+
+## Tom's Step-by-Step Workflow
+```bash
+## Before i start there will be need for some Git configuration of user credentials
+```
+- The commands seen on the screenshot below shows a successful configuration of the users credentials.
+![img1ii](./Img-git/img1ii.png)
 ### 1. Fork the project's repository
 - Since Tom was only sent the projects URL, his first step was to fork the repository to enable him contribute to the project.
 
@@ -204,3 +210,29 @@ git push origin add-contact-info
 - Add PR title: "Add contact info"
 - Add description explaining changes
 - Click "Create Pull Request" and Request review from a teammate.
+
+![img7a](./Img-git/img7a.png)
+
+
+![img8a](./Img-git/img8a.png)
+
+
+
+
+### 9. After PR Approval
+
+- Once approved by the team after a pull request is recieved and reviewed by a team mate
+
+- The teammate now merges the PR
+
+- Changes are now in the main branch
+
+- Jerry can delete his local branch:
+
+![img9a](./Img-git/img9a.png)
+
+![img10b](./Img-git/img10b.png)
+
+![img10a](./Img-git/img10a.png)
+
+
